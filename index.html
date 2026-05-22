@@ -751,4 +751,366 @@
     <svg class="hero-svg" viewBox="0 0 520 800" xmlns="http://www.w3.org/2000/svg">
       <!-- Background decoration -->
       <defs>
-        
+        <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+          <stop offset="0%" stop-color="#c8982a" stop-opacity="0.12"/>
+          <stop offset="100%" stop-color="#9b2335" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="glow2" cx="50%" cy="70%" r="40%">
+          <stop offset="0%" stop-color="#2a6b72" stop-opacity="0.1"/>
+          <stop offset="100%" stop-color="#2a6b72" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="520" height="800" fill="url(#glow)"/>
+      <rect width="520" height="800" fill="url(#glow2)"/>
+
+      <!-- Art nouveau floral frame top -->
+      <g opacity="0.35" stroke="#c8982a" fill="none" stroke-width="0.8">
+        <path d="M260 60 C260 60 220 90 200 130 C180 170 195 200 220 195 C245 190 255 160 260 140 C265 160 275 190 300 195 C325 200 340 170 320 130 C300 90 260 60 260 60Z"/>
+        <path d="M260 60 L260 130"/>
+        <circle cx="260" cy="55" r="8"/>
+        <path d="M200 130 C180 110 160 120 155 140 C150 160 165 175 185 165"/>
+        <path d="M320 130 C340 110 360 120 365 140 C370 160 355 175 335 165"/>
+        <path d="M155 140 C130 130 115 145 120 165 C125 185 145 185 160 170"/>
+        <path d="M365 140 C390 130 405 145 400 165 C395 185 375 185 360 170"/>
+        <!-- Side tendrils -->
+        <path d="M80 200 Q100 180 120 200 Q140 220 130 240"/>
+        <path d="M440 200 Q420 180 400 200 Q380 220 390 240"/>
+        <path d="M70 240 Q65 270 80 290"/>
+        <path d="M450 240 Q455 270 440 290"/>
+      </g>
+
+      <!-- Central composition - book / scroll -->
+      <g transform="translate(140, 200)">
+        <!-- Main book shape -->
+        <rect x="10" y="20" width="240" height="320" rx="4"
+              fill="#ede4d0" stroke="#c8982a" stroke-width="1" opacity="0.9"/>
+        <rect x="10" y="20" width="12" height="320"
+              fill="#c8982a" opacity="0.3"/>
+        <!-- Book spine highlight -->
+        <line x1="22" y1="20" x2="22" y2="340" stroke="#c8982a" stroke-width="0.5" opacity="0.4"/>
+        <!-- Inner border -->
+        <rect x="30" y="36" width="204" height="288" rx="2"
+              fill="none" stroke="#c8982a" stroke-width="0.5" opacity="0.4"/>
+
+        <!-- "Page" content lines - manga panel suggestion -->
+        <rect x="40" y="52" width="184" height="120" rx="1"
+              fill="#2a6b72" opacity="0.12"/>
+        <rect x="40" y="52" width="184" height="120" rx="1"
+              fill="none" stroke="#2a6b72" stroke-width="0.6" opacity="0.3"/>
+
+        <!-- Decorative Japanese-style panel marks -->
+        <line x1="130" y1="52" x2="130" y2="172" stroke="#2a6b72" stroke-width="0.5" opacity="0.25"/>
+        <line x1="40" y1="112" x2="224" y2="112" stroke="#2a6b72" stroke-width="0.5" opacity="0.25"/>
+
+        <!-- Text suggestion lines -->
+        <line x1="46" y1="188" x2="218" y2="188" stroke="#1a1209" stroke-width="0.6" opacity="0.2"/>
+        <line x1="46" y1="202" x2="180" y2="202" stroke="#1a1209" stroke-width="0.6" opacity="0.2"/>
+        <line x1="46" y1="216" x2="210" y2="216" stroke="#1a1209" stroke-width="0.6" opacity="0.2"/>
+        <line x1="46" y1="230" x2="165" y2="230" stroke="#1a1209" stroke-width="0.6" opacity="0.2"/>
+
+        <rect x="40" y="256" width="88" height="56" rx="1"
+              fill="#9b2335" opacity="0.1" stroke="#9b2335" stroke-width="0.5" opacity2="0.3"/>
+        <rect x="136" y="256" width="88" height="56" rx="1"
+              fill="#c8982a" opacity="0.1" stroke="#c8982a" stroke-width="0.5" opacity2="0.3"/>
+
+        <!-- Title text area -->
+        <rect x="56" y="306" width="148" height="14" rx="7"
+              fill="#9b2335" opacity="0.08"/>
+      </g>
+
+      <!-- Floating kanji-like elements -->
+      <text x="440" y="300" font-family="'Noto Sans JP'" font-size="52" fill="#2a6b72" opacity="0.06" transform="rotate(-6, 440, 300)">漫</text>
+      <text x="60" y="480" font-family="'Noto Sans JP'" font-size="44" fill="#9b2335" opacity="0.07" transform="rotate(5, 60, 480)">画</text>
+      <text x="400" y="560" font-family="'Noto Sans JP'" font-size="36" fill="#c8982a" opacity="0.07" transform="rotate(-3, 400, 560)">愛</text>
+
+      <!-- Art nouveau bottom floral -->
+      <g opacity="0.3" stroke="#c8982a" fill="none" stroke-width="0.8" transform="translate(0, 620)">
+        <path d="M260 130 C260 130 220 100 200 60 C180 20 195 -10 220 -5 C245 0 255 30 260 50 C265 30 275 0 300 -5 C325 -10 340 20 320 60 C300 100 260 130 260 130Z"/>
+        <path d="M260 130 L260 60"/>
+        <circle cx="260" cy="135" r="8"/>
+        <path d="M100 60 Q130 40 160 60 Q190 80 170 100"/>
+        <path d="M420 60 Q390 40 360 60 Q330 80 350 100"/>
+        <path d="M80 80 Q60 60 70 40 Q80 20 100 30"/>
+        <path d="M440 80 Q460 60 450 40 Q440 20 420 30"/>
+      </g>
+
+      <!-- Corner ornaments -->
+      <g stroke="#c8982a" stroke-width="0.7" fill="none" opacity="0.25">
+        <path d="M40 40 L40 65 M40 40 L65 40"/>
+        <path d="M480 40 L480 65 M480 40 L455 40"/>
+        <path d="M40 760 L40 735 M40 760 L65 760"/>
+        <path d="M480 760 L480 735 M480 760 L455 760"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ── FEATURED WORKS ── -->
+<section class="works">
+  <div class="reveal">
+    <p class="section-label">Aktuální překlady</p>
+    <h2 class="section-title">Doporučené tituly</h2>
+  </div>
+  <div class="works-grid reveal">
+    <div class="work-card">
+      <div class="work-card-art">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" opacity="0.2">
+          <circle cx="40" cy="40" r="38" stroke="white" stroke-width="1"/>
+          <path d="M40 10 L40 70 M10 40 L70 40" stroke="white" stroke-width="0.7"/>
+          <circle cx="40" cy="40" r="15" stroke="white" stroke-width="0.7"/>
+        </svg>
+      </div>
+      <div class="work-card-inner">
+        <p class="work-tag">Dobrodružství · Shounen</p>
+        <p class="work-title">Příslib hvězdné<br/>noci</p>
+        <p class="work-title-jp">星夜の約束</p>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-card-art">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" opacity="0.2">
+          <rect x="8" y="8" width="64" height="64" stroke="white" stroke-width="1"/>
+          <path d="M8 40 L72 40 M40 8 L40 72" stroke="white" stroke-width="0.7"/>
+          <rect x="24" y="24" width="32" height="32" stroke="white" stroke-width="0.7"/>
+        </svg>
+      </div>
+      <div class="work-card-inner">
+        <p class="work-tag">Romance · Josei</p>
+        <p class="work-title">Červená nit<br/>osudu</p>
+        <p class="work-title-jp">運命の赤い糸</p>
+      </div>
+    </div>
+    <div class="work-card">
+      <div class="work-card-art">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" opacity="0.2">
+          <path d="M40 5 L75 68 L5 68 Z" stroke="white" stroke-width="1"/>
+          <path d="M40 25 L62 68 L18 68 Z" stroke="white" stroke-width="0.7"/>
+          <circle cx="40" cy="50" r="8" stroke="white" stroke-width="0.7"/>
+        </svg>
+      </div>
+      <div class="work-card-inner">
+        <p class="work-tag">Fantasy · Seinen</p>
+        <p class="work-title">Duch<br/>starého lesa</p>
+        <p class="work-title-jp">古い森の精霊</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section>
+  <div class="about">
+    <div class="about-visual reveal">
+      <div class="about-frame"></div>
+      <div class="about-frame-accent"></div>
+      <!-- Ornament SVG -->
+      <svg class="about-ornament" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="48" stroke="#c8982a" stroke-width="1"/>
+        <circle cx="50" cy="50" r="35" stroke="#c8982a" stroke-width="0.5"/>
+        <path d="M50 2 L50 98 M2 50 L98 50" stroke="#c8982a" stroke-width="0.4"/>
+        <circle cx="50" cy="50" r="10" fill="#9b2335" opacity="0.5"/>
+      </svg>
+      <!-- Large decorative Japanese character -->
+      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center;">
+        <span style="font-family:'Noto Sans JP'; font-size:8rem; font-weight:300; color:rgba(245,239,227,0.15); user-select:none;">愛</span>
+      </div>
+    </div>
+
+    <div class="about-text reveal">
+      <p class="section-label">O projektu</p>
+      <h2 class="section-title">Manga<br/>pro česká srdce</h2>
+      <p class="about-body">
+        Pohádkový Inkoust je nezávislý projekt zasvěcený překladu japonských komiksů
+        do češtiny. Věříme, že každý příběh si zaslouží žít v jazyce, který mu dá nový domov.
+      </p>
+      <p class="about-body">
+        Naše překlady se snaží zachovat původní ducha díla — rytmus dialogů, 
+        poetiku gest, ticho mezi řádky — a zároveň znít přirozeně česky.
+      </p>
+      <p class="about-sig">— s láskou k příběhům</p>
+      <br/>
+      <a href="blog.html" class="btn-secondary" style="margin-top: 12px;">Číst blog</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── TRANSLATION LOG ── -->
+<section class="log-section">
+  <div class="reveal" style="max-width: 900px; margin: 0 auto;">
+    <p class="section-label">Přehled</p>
+    <h2 class="section-title">Translation Log</h2>
+
+    <div class="log-list">
+      <a href="translation.html" class="log-item">
+        <div>
+          <p class="log-vol">Vol. 03</p>
+          <p class="log-vol" style="color: rgba(200,152,42,0.4); font-size:0.65rem;">Kap. 21–30</p>
+        </div>
+        <div>
+          <p class="log-name">Příslib hvězdné noci</p>
+          <p class="log-name-jp">星夜の約束</p>
+        </div>
+        <span class="log-status done">Hotovo</span>
+      </a>
+      <a href="translation.html" class="log-item">
+        <div>
+          <p class="log-vol">Vol. 02</p>
+          <p class="log-vol" style="color: rgba(200,152,42,0.4); font-size:0.65rem;">Kap. 12–16</p>
+        </div>
+        <div>
+          <p class="log-name">Červená nit osudu</p>
+          <p class="log-name-jp">運命の赤い糸</p>
+        </div>
+        <span class="log-status wip">Probíhá</span>
+      </a>
+      <a href="translation.html" class="log-item">
+        <div>
+          <p class="log-vol">Vol. 01</p>
+          <p class="log-vol" style="color: rgba(200,152,42,0.4); font-size:0.65rem;">Kap. 1–8</p>
+        </div>
+        <div>
+          <p class="log-name">Duch starého lesa</p>
+          <p class="log-name-jp">古い森の精霊</p>
+        </div>
+        <span class="log-status plan">Plánováno</span>
+      </a>
+      <a href="translation.html" class="log-item">
+        <div>
+          <p class="log-vol">Vol. 04</p>
+          <p class="log-vol" style="color: rgba(200,152,42,0.4); font-size:0.65rem;">Kap. 1–6</p>
+        </div>
+        <div>
+          <p class="log-name">Stříbrný měsíc</p>
+          <p class="log-name-jp">銀の月</p>
+        </div>
+        <span class="log-status plan">Plánováno</span>
+      </a>
+    </div>
+    <div style="text-align: right; margin-top: 32px;">
+      <a href="translation.html" class="btn-secondary" style="border-color: rgba(42,107,114,0.6); color: #2a6b72;">Celý přehled →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── GALLERY PREVIEW ── -->
+<section class="gallery-preview">
+  <div class="reveal">
+    <p class="section-label">Galerie</p>
+    <h2 class="section-title">Fan Art & Ilustrace</h2>
+  </div>
+  <div class="gallery-strip reveal">
+    <div class="gallery-item">
+      <div class="gallery-item-bg"></div>
+      <p class="gallery-item-label">Akvarel</p>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-item-bg"></div>
+      <p class="gallery-item-label">Inkoust</p>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-item-bg"></div>
+      <p class="gallery-item-label">Digitální</p>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-item-bg"></div>
+      <p class="gallery-item-label">Skica</p>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-item-bg"></div>
+      <p class="gallery-item-label">Mixed</p>
+    </div>
+  </div>
+  <div class="gallery-cta reveal">
+    <a href="gallery.html" class="btn-primary">Otevřít galerii</a>
+  </div>
+</section>
+
+<!-- ── BLOG PREVIEW ── -->
+<section class="blog-preview">
+  <div class="reveal">
+    <p class="section-label">Blog</p>
+    <h2 class="section-title">Zápisky překladatele</h2>
+  </div>
+  <div class="blog-grid reveal">
+    <div class="blog-featured">
+      <p class="blog-meta">15. května 2026 · Překlad</p>
+      <a href="blog.html" class="blog-feat-title">
+        Jak přeložit ticho: neverbální komunikace v manga panelech
+      </a>
+      <p class="blog-feat-body">
+        Japonské komiksy jsou plné momentů, kdy slova chybí — ale stránka přesto mluví.
+        Jak zachytit tuto tichomluvu v češtině? O prostoře, dechu a tom, co zůstane nevysloveno...
+      </p>
+    </div>
+    <div class="blog-side">
+      <a href="blog.html" class="blog-item">
+        <p class="blog-item-title">Keigo a vykání: formálnost dvou světů</p>
+        <p class="blog-item-meta">2. dubna 2026 · Lingvistika</p>
+      </a>
+      <a href="blog.html" class="blog-item">
+        <p class="blog-item-title">Onomatopoe: když zvuk má tvar</p>
+        <p class="blog-item-meta">18. března 2026 · Překlad</p>
+      </a>
+      <a href="blog.html" class="blog-item">
+        <p class="blog-item-title">Oblíbená manga roku 2025 — osobní výběr</p>
+        <p class="blog-item-meta">5. ledna 2026 · Tipy</p>
+      </a>
+      <a href="blog.html" class="blog-item" style="border-top: none; padding-top: 4px;">
+        <p class="blog-item-meta" style="color: var(--red);">Všechny příspěvky →</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <p class="footer-brand">Pohádkový Inkoust</p>
+      <p class="footer-brand-desc">
+        Japonské příběhy v českých slovech.<br/>
+        S láskou přeloženo — pro každého, kdo věří v sílu komiksové stránky.
+      </p>
+    </div>
+    <div>
+      <p class="footer-col-title">Navigace</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Úvod</a></li>
+        <li><a href="translation.html">Překlady</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Kontakt</p>
+      <ul class="footer-links">
+        <li><a href="contact.html">Napište nám</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">RSS</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 Pohádkový Inkoust. Všechna práva vyhrazena.</p>
+    <p class="footer-lang">おとぎ話のインク</p>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
